@@ -51,12 +51,12 @@
 
 @baseFontSize:          13px;
 @baseFontFamily:        @sansFontFamily;
-@baseLineHeight:        18px;
+@baseLineHeight:        16px;//18px;
 @altFontFamily:         @serifFontFamily;
 
 @headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
 @headingsFontWeight:    bold;    // instead of browser default, bold
-@headingsColor:         inherit; // empty to use BS default, @textColor
+@headingsColor:         #00669E;//inherit; // empty to use BS default, @textColor
 
 
 // Tables
@@ -146,11 +146,11 @@
 // Navbar
 // -------------------------
 @navbarHeight:                    40px;
-@navbarBackground:                @grayDarker;
-@navbarBackgroundHighlight:       @grayDark;
+@navbarBackground:                #00456B;//@grayDarker;
+@navbarBackgroundHighlight:       #00669E;//@grayDark;
 
 @navbarText:                      @grayLight;
-@navbarLinkColor:                 @grayLight;
+@navbarLinkColor:                 @white;//@grayLight;
 @navbarLinkColorHover:            @white;
 @navbarLinkColorActive:           @navbarLinkColorHover;
 @navbarLinkBackgroundHover:       transparent;
@@ -166,8 +166,8 @@
 // Hero unit
 // -------------------------
 @heroUnitBackground:              @grayLighter;
-@heroUnitHeadingColor:            inherit;
-@heroUnitLeadColor:               inherit;
+@heroUnitHeadingColor:            @headingsColor;//inherit;
+@heroUnitLeadColor:               @headingsColor;//inherit;
 
 
 // Form states and alerts

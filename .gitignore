@@ -10,6 +10,7 @@
 *.vi
 *~
 *.sass-cache
+*.rar
 
 # OS or Editor folders
 .DS_Store
@@ -34,3 +35,6 @@ nbproject
 .CVS
 .idea
 node_modules
+docs/assets
+bootstrap
+
