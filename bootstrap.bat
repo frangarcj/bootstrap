@@ -16,7 +16,7 @@ call recess --compress %BOOTSTRAP_LESS% > bootstrap\css\bootstrap.min.css
 call recess --compile %BOOTSTRAP_RESPONSIVE_LESS% > bootstrap\css\bootstrap-responsive.css
 call recess --compress %BOOTSTRAP_RESPONSIVE_LESS% > bootstrap\css\bootstrap-responsive.min.css
 
-type js\bootstrap-transition.js js\bootstrap-alert.js js\bootstrap-button.js js\bootstrap-carousel.js js\bootstrap-collapse.js js\bootstrap-dropdown.js js\bootstrap-modal.js js\bootstrap-tooltip.js js\bootstrap-popover.js js\bootstrap-scrollspy.js js\bootstrap-tab.js js\bootstrap-typeahead.js > bootstrap\js\bootstrap.js 2> nul
+type js\bootstrap-transition.js js\bootstrap-alert.js js\bootstrap-button.js js\bootstrap-carousel.js js\bootstrap-collapse.js js\bootstrap-dropdown.js js\bootstrap-modal.js js\bootstrap-tooltip.js js\bootstrap-popover.js js\bootstrap-scrollspy.js js\bootstrap-tab.js js\bootstrap-typeahead.js js/bootstrap-affix.js > bootstrap\js\bootstrap.js 2> nul
 
 call uglifyjs -nc bootstrap\js\bootstrap.js > bootstrap\js\bootstrap.min.tmp.js
 
