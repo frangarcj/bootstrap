@@ -15,7 +15,7 @@ copy img\* docs\assets\img\
 copy js\*.js docs\assets\js\
 copy js\tests\vendor\jquery.js docs\assets\js\
 echo "Compiling documentation...                  Done"
-type js\bootstrap-transition.js js\bootstrap-alert.js js\bootstrap-button.js js\bootstrap-carousel.js js\bootstrap-collapse.js js\bootstrap-dropdown.js js\bootstrap-modal.js js\bootstrap-tooltip.js js\bootstrap-popover.js js\bootstrap-scrollspy.js js\bootstrap-tab.js js\bootstrap-typeahead.js js/bootstrap-affix.js > docs\assets\js\bootstrap.js 2> nul
+copy /B js\bootstrap-transition.js+js\bootstrap-alert.js+js\bootstrap-button.js+js\bootstrap-carousel.js+js\bootstrap-collapse.js+js\bootstrap-dropdown.js+js\bootstrap-modal.js+js\bootstrap-tooltip.js+js\bootstrap-popover.js+js\bootstrap-scrollspy.js+js\bootstrap-tab.js+js\bootstrap-typeahead.js+js\bootstrap-affix.js docs\assets\js\bootstrap.js
 call uglifyjs -nc docs\assets\js\bootstrap.js > docs\assets\js\bootstrap.min.tmp.js
 
 setlocal EnableDelayedExpansion
